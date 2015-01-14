@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+$:.unshift("/Library/RubyMotion/lib")
+require 'motion/project/template/android'
+
+Motion::Project::App.setup do |app|
+  # Use `rake config' to see complete project settings.
+  app.name = 'instance_eval_crash'
+
+  # the crash occurs if this is set to "12" - if set to "15" it works correctly
+  app.api_version = "12"
+end
