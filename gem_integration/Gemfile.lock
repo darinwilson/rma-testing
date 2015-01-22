@@ -1,0 +1,10 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    motion_print (0.0.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  motion_print
