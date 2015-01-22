@@ -11,4 +11,4 @@ This app demonstrates two problems with using 3rd party gems in a RubyMotion And
 * `bundle install`
 * `rake device`
 
-[This pull request]() will fix the first problem. Once you've integrated that, the second problem will appear
+[This pull request](https://github.com/HipByte/RubyMotion/pull/189) will fix the first problem. Once you've integrated that, the second problem will appear
