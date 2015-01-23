@@ -13,4 +13,3 @@ This is primarily used to create small repos that reproduce RubyMotion issues
 
 * extra_packages_buildbug
 * instance_eval_crash
-* include_module
