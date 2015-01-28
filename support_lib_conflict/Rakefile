@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+$:.unshift("/Library/RubyMotion/lib")
+require 'motion/project/template/android'
+
+Motion::Project::App.setup do |app|
+  # Use `rake config' to see complete project settings.
+  app.name = 'support_lib_conflict'
+
+  app.vendor_project jar: "vendor/android-support-v4.jar"
+  
+end
