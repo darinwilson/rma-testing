@@ -21,5 +21,6 @@ Now run this sed script to change all the calls to `Hash.new` to `nil`
     sed -i "" 's/Hash\.new/nil/g' app/fake_classes/*.rb
 
 Run `rake clean; rake build` and you'll see that the build time is significantly faster.
+
 **Note:** the time spent at the `libpayload.so` step is the same every time - even a one-line change to the code causes the long build time.
 
