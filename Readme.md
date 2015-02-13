@@ -8,8 +8,6 @@ This is primarily used to create small repos that reproduce RubyMotion issues
 * [hashbugs](https://github.com/darinwilson/rma-testing/tree/master/hashbugs) : most issues of [RM-725](http://hipbyte.myjetbrains.com/youtrack/issue/RM-725) are fixed but Hash still does not implement Enumerable (*update:* see [RMA-755](http://hipbyte.myjetbrains.com/youtrack/issue/RM-755) - it turns out Hash does implement Enumerable, but the Android implementation of Enumerable is missing many methods)
 * [inheritance](https://github.com/darinwilson/rma-testing/tree/master/inheritance) : using multiple levels of inheritance breaks if one of the classes is part of module (support ticket filed, no bug in tracker yet)
 * [jni_return_type](https://github.com/darinwilson/rma-testing/tree/master/jni_return_type) : the compiler does not always assign the correct return type in vendored JAR files : [RM-724](http://hipbyte.myjetbrains.com/youtrack/issue/RM-724) 
-* [longbuild](https://github.com/darinwilson/rma-testing/tree/master/longbuild) : calling constructors adds significantly to the build time - the more calls you have, the slower your build (support ticket filed, no bug in tracker yet)
-* [stringbugs](https://github.com/darinwilson/rma-testing/tree/master/stringbugs) : demonstrates still outstanding issues with String - ~~[RM-743](http://hipbyte.myjetbrains.com/youtrack/issue/RM-743)~~ and [RM-752](http://hipbyte.myjetbrains.com/youtrack/issue/RM-752)
 * [support_lib_conflict](https://github.com/darinwilson/rma-testing/tree/master/support_lib_conflict) : using a PORO with a method named `update` causes a compile error if you're using the v4 support library - [RMA-724](http://hipbyte.myjetbrains.com/youtrack/issue/RM-724), same as [jni_return_type](https://github.com/darinwilson/rma-testing/tree/master/jni_return_type), described above 
 
 ### Repos with Fixed Issues 
@@ -17,3 +15,5 @@ This is primarily used to create small repos that reproduce RubyMotion issues
 * [extra_packages_buildbug](https://github.com/darinwilson/rma-testing/tree/master/extra_packages_buildbug)
 * [instance_eval_crash](https://github.com/darinwilson/rma-testing/tree/master/instance_eval_crash)
 * [breakbug](https://github.com/darinwilson/rma-testing/tree/master/breakbug)
+* [longbuild](https://github.com/darinwilson/rma-testing/tree/master/longbuild)
+* [stringbugs](https://github.com/darinwilson/rma-testing/tree/master/stringbugs)
