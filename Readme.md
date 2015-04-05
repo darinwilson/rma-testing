@@ -14,8 +14,8 @@ This is primarily used to create small repos that reproduce RubyMotion issues
 
 ### Repos with Fixed Issues 
 
-* [extra_packages_buildbug](https://github.com/darinwilson/rma-testing/tree/master/extra_packages_buildbug)
-* [instance_eval_crash](https://github.com/darinwilson/rma-testing/tree/master/instance_eval_crash)
-* [breakbug](https://github.com/darinwilson/rma-testing/tree/master/breakbug)
-* [longbuild](https://github.com/darinwilson/rma-testing/tree/master/longbuild)
-* [stringbugs](https://github.com/darinwilson/rma-testing/tree/master/stringbugs)
+* [extra_packages_buildbug](https://github.com/darinwilson/rma-testing/tree/master/_fixed/extra_packages_buildbug)
+* [instance_eval_crash](https://github.com/darinwilson/rma-testing/tree/master/_fixed/instance_eval_crash)
+* [breakbug](https://github.com/darinwilson/rma-testing/tree/master/_fixed/breakbug)
+* [longbuild](https://github.com/darinwilson/rma-testing/tree/master/_fixed/longbuild)
+* [stringbugs](https://github.com/darinwilson/rma-testing/tree/master/_fixed/stringbugs)
