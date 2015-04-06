@@ -1,4 +1,4 @@
 module MyModule
-  class C
+  class A
   end
 end

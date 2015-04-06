@@ -5,6 +5,7 @@ This is primarily used to create small repos that reproduce RubyMotion issues
 ### Repos with Outstanding Issues
 
 * [inheritance](https://github.com/darinwilson/rma-testing/tree/master/inheritance) : using multiple levels of inheritance breaks if one of the classes is part of module: [RM-773](http://hipbyte.myjetbrains.com/youtrack/issue/RM-773)
+* [inheritance_activity](https://github.com/darinwilson/rma-testing/tree/master/inheritance_activity) : another project that demonstrates a variation of the inheritance problem [RM-773](http://hipbyte.myjetbrains.com/youtrack/issue/RM-773)
 * [jni_return_type](https://github.com/darinwilson/rma-testing/tree/master/jni_return_type) : the compiler does not always assign the correct return type in vendored JAR files : [RM-724](http://hipbyte.myjetbrains.com/youtrack/issue/RM-724) 
 * [module_function](https://github.com/darinwilson/rma-testing/tree/master/module_function) : [RM-805](http://hipbyte.myjetbrains.com/youtrack/issue/RM-805) (`module_function` not implemented) is marked as fixed, but it currently raises an error: "RuntimeError: Not implemented yet." **UPDATE:** you can use `module_method` as a scope marker, but it won't yet take a symbol - [RM-835](http://hipbyte.myjetbrains.com/youtrack/issue/RM-835) should address that
 * [reassign_art_crash](https://github.com/darinwilson/rma-testing/tree/master/reassign_art_crash) : converting a symbol to a string and reassigning to the same variable name causes an ART crash when run in an activity, but works correctly in the REPL (support request filed)
