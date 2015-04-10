@@ -4,6 +4,7 @@ This is primarily used to create small repos that reproduce RubyMotion issues
 
 ### Repos with Outstanding Issues
 
+* [inherited_constructors](https://github.com/darinwilson/rma-testing/tree/master/inherited_constructors) : Constructors that accept parameters are not inherited by subclasses (support request filed)
 * [inheritance](https://github.com/darinwilson/rma-testing/tree/master/inheritance) : using multiple levels of inheritance breaks if one of the classes is part of module: [RM-773](http://hipbyte.myjetbrains.com/youtrack/issue/RM-773)
 * [inheritance_activity](https://github.com/darinwilson/rma-testing/tree/master/inheritance_activity) : another project that demonstrates a variation of the inheritance problem [RM-773](http://hipbyte.myjetbrains.com/youtrack/issue/RM-773)
 * [jni_return_type](https://github.com/darinwilson/rma-testing/tree/master/jni_return_type) : the compiler does not always assign the correct return type in vendored JAR files : [RM-724](http://hipbyte.myjetbrains.com/youtrack/issue/RM-724) 
