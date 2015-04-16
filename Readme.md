@@ -4,6 +4,7 @@ This is primarily used to create small repos that reproduce RubyMotion issues
 
 ### Repos with Outstanding Issues
 
+* [gem_dependencies](https://github.com/darinwilson/rma-testing/tree/master/gem_dependencies) : When using a gem that depends on another gem, the second gem is not correctly pulled into the project (support request filed)
 * [save_instance](https://github.com/darinwilson/rma-testing/tree/master/save_instance) : Calling the base class version of `Fragment#onSaveInstanceState` causes a `NoMethodError` (support request filed)
 * [inherited_constructors](https://github.com/darinwilson/rma-testing/tree/master/inherited_constructors) : Constructors that accept parameters are not inherited by subclasses [RM-844](http://hipbyte.myjetbrains.com/youtrack/issue/RM-844)
 * [inheritance](https://github.com/darinwilson/rma-testing/tree/master/inheritance) : using multiple levels of inheritance breaks if one of the classes is part of module: [RM-773](http://hipbyte.myjetbrains.com/youtrack/issue/RM-773)

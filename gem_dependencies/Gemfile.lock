@@ -1,0 +1,23 @@
+GIT
+  remote: https://github.com/GantMan/PackingPeanut.git
+  revision: 978d314ea74dc982f44302c920e471b4743c1bb0
+  branch: moran_json
+  specs:
+    PackingPeanut (0.1.0)
+      moran
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    moran (0.0.1)
+      motion-gradle
+    motion-gradle (1.0.3)
+    rake (10.4.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  PackingPeanut!
+  moran
+  rake

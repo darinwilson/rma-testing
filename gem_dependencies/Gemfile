@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+
+gem 'rake'
+gem "PackingPeanut", :git => "https://github.com/GantMan/PackingPeanut.git", :branch => "moran_json"
+gem "moran"
