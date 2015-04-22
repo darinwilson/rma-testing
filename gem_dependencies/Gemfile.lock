@@ -19,5 +19,4 @@ PLATFORMS
 
 DEPENDENCIES
   PackingPeanut!
-  moran
   rake

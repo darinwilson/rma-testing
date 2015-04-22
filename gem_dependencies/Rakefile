@@ -5,6 +5,7 @@ require 'motion/project/template/android'
 begin
   require 'bundler'
   Bundler.require
+  require "motion-gradle"
 rescue LoadError
 end
 

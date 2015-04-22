@@ -2,6 +2,26 @@
 
 This project shows that if your project requires a gem that in turn requires another gem, the second gem is not pulled into the project correctly.
 
+### Quick Overview
+
+This project requires PackingPeanut, which itself requires Moran.
+
+```
+bundle install
+rake gradle:install
+rake device
+```
+
+produces:
+
+```
+E/AndroidRuntime(23148): java.lang.RuntimeException: Unable to start activity 
+ComponentInfo{com.yourcompany.gem_dependencies/com.yourcompany.gem_dependencies.MainActivity}: 
+com.rubymotion.NameError: uninitialized constant `Moran'
+```
+
+Adding moran to the `Gemfile` of this project resolves the issue.
+
 ### Details
 
 This project has a single gem in the Gemfile:
@@ -36,45 +56,17 @@ Based on PackingPeanut's gemspec, bundler pulls in moran, as well as motion-grad
 
 So far, so good. 
 
-#### Problem 1
+`rake gradle:install` appears to do the right thing, but during the build stage, I'm not prompted to replace the `META-INF/LICENSE` file, which is what usually happens when building a project with Gradle dependencies from a clean state.
 
-The `rake` tasks from `motion-gradle` are not available in this project:
+When the app runs, it crashes with a `NameError`
 
-```shell
-rake build             # Create an application package file (.apk)
-rake clean             # Clear local build objects
-rake clean:all         # Clean all build objects
-rake config            # Show project config
-rake ctags             # Generate ctags
-rake default           # Same as 'rake emulator'
-rake device            # Build the app then run it in the device
-rake device:install    # Install the app in the device
-rake device:start      # Start the app's main intent in the device
-rake emulator          # Build the app then run it in the emulator
-rake emulator:install  # Install the app in the emulator
-rake emulator:start    # Start the app's main intent in the emulator
-rake release           # Create an application package file (.apk) for release (Goog...
-rake spec              # Same as 'spec:emulator'
-rake spec:device       # Run the test/spec suite on the device
-rake spec:emulator     # Run the test/spec suite on the emulator
 ```
-
-We would expect to see `rake gradle:install` in the list, and it's actually necessary for moran to work correctly.
-
-(This might be a bug with motion-gradle, so I'll post an issue to that repo as well)
-
-#### Problem 2
-
-The classes defined in moran are not available to the project, even though bundler imported them:
-
-```ruby
->> Moran.parse('{ foo: "bar" }')
-=> <NameError: uninitialized constant `Moran'>
+E/AndroidRuntime(23148): java.lang.RuntimeException: Unable to start activity 
+ComponentInfo{com.yourcompany.gem_dependencies/com.yourcompany.gem_dependencies.MainActivity}: 
+com.rubymotion.NameError: uninitialized constant `Moran'
 ```
 
 #### Workaround
 
-If I add moran to this project's `Gemfile`, the motion-gradle rake task appears, and the project can use moran without errors.
-
-
+If I add moran to this project's `Gemfile`, the project can use moran without errors.
 
