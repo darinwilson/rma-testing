@@ -6,6 +6,7 @@ This is primarily used to create small repos that reproduce RubyMotion issues
 
 | Repo | Description | RM Bug |
 | --- | --- | --- |
+| [round_rect_crash](https://github.com/darinwilson/rma-testing/tree/master/round_rect_crash) | Creating an Android RoundRect with Ruby causes an ART crash | support request filed |
 | [gem_dependencies](https://github.com/darinwilson/rma-testing/tree/master/gem_dependencies) | When using a gem that depends on another gem, the second gem is not correctly pulled into the project | support request filed |
 | [inheritance](https://github.com/darinwilson/rma-testing/tree/master/inheritance) | using multiple levels of inheritance breaks if one of the classes is part of module | [RM-773](http://hipbyte.myjetbrains.com/youtrack/issue/RM-773) |                                                                                                 
 | [inheritance_activity](https://github.com/darinwilson/rma-testing/tree/master/inheritance_activity) | another project that demonstrates a variation of the inheritance problem | [RM-773](http://hipbyte.myjetbrains.com/youtrack/issue/RM-773) |
