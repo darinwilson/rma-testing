@@ -1,2 +1,2 @@
-class B < MyModule::C 
+class B < MyModule::A
 end

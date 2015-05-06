@@ -1,4 +1,4 @@
-module MyModule
-  class A
-  end
+module MyModule; end
+
+class MyModule::A
 end
