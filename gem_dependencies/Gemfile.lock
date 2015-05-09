@@ -1,9 +1,9 @@
 GIT
-  remote: https://github.com/GantMan/PackingPeanut.git
-  revision: 978d314ea74dc982f44302c920e471b4743c1bb0
-  branch: moran_json
+  remote: https://github.com/darinwilson/PackingPeanut
+  revision: 43862c3f706df777c7f0278e183fd99234b00639
+  branch: moran_fix
   specs:
-    PackingPeanut (0.1.0)
+    PackingPeanut (0.0.3)
       moran
 
 GEM
@@ -11,7 +11,7 @@ GEM
   specs:
     moran (0.0.1)
       motion-gradle
-    motion-gradle (1.0.3)
+    motion-gradle (1.0.5)
     rake (10.4.2)
 
 PLATFORMS
