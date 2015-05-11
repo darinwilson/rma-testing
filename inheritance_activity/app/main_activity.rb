@@ -1,11 +1,8 @@
-module MyModule
-  class MyActivity < Android::App::Activity
-  end
-end
+module MyModule; end
 
 class MainActivity < MyModule::MyActivity
   def onCreate(savedInstanceState)
     super
+    hello()
   end
-
 end
