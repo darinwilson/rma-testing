@@ -5,7 +5,8 @@ require 'motion/project/template/android'
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'support_lib_conflict'
+  app.development { app.archs << "x86" }
 
   app.vendor_project jar: "vendor/android-support-v4.jar"
-  
+
 end

@@ -6,4 +6,5 @@ Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'jni_return_type'
   app.vendor_project jar: "vendor/volley-1.0.9.jar"
+  app.development { app.archs << "x86" }
 end
